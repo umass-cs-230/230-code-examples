@@ -2,7 +2,7 @@
 
 # Builds the entire application with 32-bit x86 instructions without
 # debugging symbols.
-gcc -m32 -g main.c other.c -o app.32
+gcc -m32 main.c other.c -o app.32
 
 # Builds the entire application with 32-bit x86 instructions and
 # debugging symbols included.
