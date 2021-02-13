@@ -4,7 +4,7 @@
 // To know which header files to include you must look at the "man page" for
 // each of the calls and/or references below. For example:
 //
-// $ man 3 stdin 
+// $ man 3 stdin
 // $ man 3 printf
 //
 // The stdin man page (which is also stdout and stderr) explains the

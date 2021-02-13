@@ -6,7 +6,8 @@ rm 01_stdio \
    02_open \
    03_read \
    04_write \
-   05_copy
+   05_copy \
+   06_lseek
 
 # Remove all the generated txt files
 

@@ -1,7 +1,5 @@
-#include <errno.h>
 #include <fcntl.h>
 #include <stdio.h>
-#include <string.h>
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <unistd.h>
@@ -25,7 +23,7 @@ int main(int argc, char *argv[]) {
   }
 
   // Open the destination file as write only.
-  if ((fdout = open(argv[2], O_WRONLY)) < 0) {
+  if ((fdout = open(argv[2], O_WRONLY | O_CREAT)) < 0) {
     printf("Could not open destination file %s\n", argv[2]);
     return 3;
   }

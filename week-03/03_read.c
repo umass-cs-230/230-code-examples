@@ -29,7 +29,7 @@ int main(int argc, char const *argv[]) {
 
   if (numbytes == -1) {
     printf("read failed. errno %i: %s\n", errno, strerror(errno));
-    return 1;    
+    return 1;
   }
 
   if (numbytes == 0) {

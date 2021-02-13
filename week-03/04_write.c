@@ -26,7 +26,7 @@ int main(int argc, char const *argv[]) {
 
   char buffer[1024];
   size_t length = strlen("COMPSCI 230 is Awesome!\n");
-  strncpy(buffer, "COMPSCI 230 is Awesome!\n", length+1);
+  strncpy(buffer, "COMPSCI 230 is Awesome!\n", length + 1);
   ssize_t numbytes = write(fd, buffer, length);
 
   if (numbytes == -1) {

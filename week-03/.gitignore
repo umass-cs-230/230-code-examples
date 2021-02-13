@@ -3,4 +3,5 @@
 03_read
 04_write
 05_copy
+06_lseek
 *.txt
