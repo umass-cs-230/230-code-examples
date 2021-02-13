@@ -1,3 +1,6 @@
-01_open
-
+01_stdio
+02_open
+03_read
+04_write
+05_copy
 *.txt
