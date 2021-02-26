@@ -3,6 +3,19 @@
   gdb
   gdb <file>
   gdb -h   (lists command line options)
+  gdb -tui (runs gdb in TUI mode)
+
+# TUI Commands
+
+  layout src (display the source and command windows)
+  layout asm (display the assembly and command windows)
+  layout split (display the source, assembly, and command windows)
+  layout regs  (when in src layout display the register, source,
+                and command windows. When in asm or split layout
+                display the register, assembler, and command
+                windows)
+  layout next  (display the next layout)
+  layout prev  (display the previous layout)
 
 # Exiting
 
