@@ -19,10 +19,14 @@
 
 # These flags are used to generate the simplest assembly
 # representation from the C code.
-FLAGS="-m32 -fno-stack-protector -fno-asynchronous-unwind-tables -fno-exceptions -fno-pic -O0 -g"
+SFLAGS="-m32 -fno-stack-protector -fno-asynchronous-unwind-tables -fno-exceptions -fno-pic -O0 -S"
+GFLAGS="-m32 -fno-stack-protector -fno-asynchronous-unwind-tables -fno-exceptions -fno-pic -O0 -g"
 
-gcc $FLAGS -o 01_assign 01_assign.c
-gcc $FLAGS -o 02_modified 02_modified.c
+gcc $GFLAGS -o 01_assign 01_assign.c
+gcc $GFLAGS -o 02_modified 02_modified.c
+
+gcc $SFLAGS 03_abs_diff.c
+gcc $GFLAGS -o 03_abs_diff 03_abs_diff.c
 
 # App Example 1
 #gcc -m32 -fno-stack-protector -fno-asynchronous-unwind-tables -fno-exceptions -fno-pic -O0 -S app.1.c
