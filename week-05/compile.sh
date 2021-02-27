@@ -39,11 +39,3 @@ gcc $GFLAGS -o 06_ffor 06_ffor.c
 
 gcc $SFLAGS 07_array.c
 gcc $GFLAGS -o 07_array 07_array.c
-
-# App Example 1
-#gcc -m32 -fno-stack-protector -fno-asynchronous-unwind-tables -fno-exceptions -fno-pic -O0 -S app.1.c
-#gcc -m32 -fno-stack-protector -fno-asynchronous-unwind-tables -fno-exceptions -fno-pic -O0 -g app.1.c -o app.1
-
-# App Example 2
-#gcc -m32 -fno-stack-protector -fno-asynchronous-unwind-tables -fno-exceptions -fno-pic -O0 -S app.2.c
-#gcc -m32 -fno-stack-protector -fno-asynchronous-unwind-tables -fno-exceptions -fno-pic -O0 -g app.2.c -o app.2
