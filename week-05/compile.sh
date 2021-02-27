@@ -28,6 +28,18 @@ gcc $GFLAGS -o 02_modified 02_modified.c
 gcc $SFLAGS 03_abs_diff.c
 gcc $GFLAGS -o 03_abs_diff 03_abs_diff.c
 
+gcc $SFLAGS 04_dowhile.c
+gcc $GFLAGS -o 04_dowhile 04_dowhile.c
+
+gcc $SFLAGS 05_wwhile.c
+gcc $GFLAGS -o 05_wwhile 05_wwhile.c
+
+gcc $SFLAGS 06_ffor.c
+gcc $GFLAGS -o 06_ffor 06_ffor.c
+
+gcc $SFLAGS 07_array.c
+gcc $GFLAGS -o 07_array 07_array.c
+
 # App Example 1
 #gcc -m32 -fno-stack-protector -fno-asynchronous-unwind-tables -fno-exceptions -fno-pic -O0 -S app.1.c
 #gcc -m32 -fno-stack-protector -fno-asynchronous-unwind-tables -fno-exceptions -fno-pic -O0 -g app.1.c -o app.1
