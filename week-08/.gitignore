@@ -1,0 +1,12 @@
+00_getpid
+01_exit
+02_exit
+03_fork
+04a_fork
+04b_fork
+05a_zombie
+05b_zombie
+07_wait
+08_waitpid
+13_setenv
+14_shell
