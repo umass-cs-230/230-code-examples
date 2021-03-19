@@ -8,5 +8,5 @@
 05b_zombie
 07_wait
 08_waitpid
-13_setenv
-14_shell
+09_setenv
+10_shell
