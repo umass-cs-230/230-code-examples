@@ -4,7 +4,7 @@
 #include <unistd.h>
 
 static void handler(int sig) {
-    printf("Ouch\n");
+    write(STDOUT_FILENO, "Ouch!\n", 6);
 }
 
 int main(int argc, char *argv[]) {
@@ -24,4 +24,3 @@ int main(int argc, char *argv[]) {
         sleep(3);
     }
 }
-
