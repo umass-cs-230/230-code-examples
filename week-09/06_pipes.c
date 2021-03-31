@@ -46,7 +46,7 @@ void consumer (FILE *pipe_read_end) {
 int main () {
   // The process ids of the producer and consumer processes.
   pid_t producer_id, consumer_id;
-  
+
   // The pipe file descriptors.
   int pd[2];
 
@@ -58,7 +58,7 @@ int main () {
   pipe(pd);
   pipe_read_end  = fdopen(pd[0], "r");
   pipe_write_end = fdopen(pd[1], "w");
-  
+
   // Second, we will fork the producer process:
   producer_id = fork();
   if (producer_id == 0) {

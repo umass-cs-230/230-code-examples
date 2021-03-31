@@ -19,6 +19,6 @@ int main (int argc, char const *argv[]) {
       printf("Child2: pid=%d pgrp=%d\n", getpid(), getpgrp());
     }
     while(1);
-  }	
+  }
   return 0;
 }
