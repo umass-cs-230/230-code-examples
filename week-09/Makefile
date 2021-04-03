@@ -8,7 +8,7 @@ BINS = $(patsubst %.c,%,$(SRCS))
 all: $(BINS)
 
 %: %.c
-	$(CC) $(FLAGS) -o $@ $<
+	$(CC) $(FLAGS) -o $@ $< -lcrypt
 
 clean:
 	rm -f $(BINS)
