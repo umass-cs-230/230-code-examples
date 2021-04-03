@@ -56,7 +56,7 @@ int main() {
     // Parent process...
     // First, we close the read end of the pipe.
     close(parent_to_child_pipe[0]);
-    exit(parent_task(parent_to_child_pipe[1]));
+    parent_task(parent_to_child_pipe[1]);
 
     // Wait on child process to complete
     wait(NULL);
