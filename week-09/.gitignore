@@ -3,8 +3,8 @@
 03_kill_prog
 04_alarm
 05_sigint
-06a_pipes
-06b_pipes
-06c_pipes
-07_ouch
-08_nonreentrant
+06_ouch
+07_nonreentrant
+08_pipes
+09_pipes
+10_pipes
