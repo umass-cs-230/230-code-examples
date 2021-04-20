@@ -68,7 +68,7 @@ int open_clientfd(char *hostname, int port) {
 
   // Establish a connection with the server.
   if (connect(clientfd, (struct sockaddr *)&serveraddr, sizeof(serveraddr)) < 0)
-    return -1;
+    return -3;
 
   printf("Echo Client connected.\n");
 

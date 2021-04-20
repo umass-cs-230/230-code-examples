@@ -25,6 +25,7 @@ void echo(int connfd) {
 
   // Keep reading lines until client closes connection:
   while ((n = recv(connfd, buf, MAXLINE, 0)) != 0) {
+    buf[n] = '\0';
     printf("server received %d bytes\n", (int)n);
     upper_case(buf);
     send(connfd, buf, n, 0);

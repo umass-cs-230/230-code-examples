@@ -38,6 +38,7 @@ void echo (int connfd) {
 
   // Keep reading lines until client closes connection:
   while((n = recv(connfd, buf, MAXLINE, 0)) != 0) {
+    buf[n] = '\0';
     printf("server received %d bytes\n", (int) n);
     upper_case(buf);
     send(connfd, buf, n, 0);
@@ -129,11 +130,15 @@ int main (int argc, char **argv) {
   // connections.
   listenfd = open_listenfd(port);
 
+  printf("Echo Server is listening on port %d.\n", port);
+
   // As is the case for all servers - run forever! It is only these
   // programs that you want to go into an infinte loop!
   while (1) {
     // Record the size of the clienaddr (struct sockaddr_in) structure.
     clientlen = sizeof(clientaddr);
+
+    printf("Echo Server is accepting incoming connections on port %d.\n", port);
 
     // Block on accepting incoming connections. When we have an
     // incoming connection accept() will fill in the given sockaddr.

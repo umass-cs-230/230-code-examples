@@ -27,6 +27,7 @@ void echo(int connfd) {
 
   // Keep reading lines until client closes connection:
   while ((n = recv(connfd, buf, MAXLINE, 0)) != 0) {
+    buf[n] = '\0';
     printf("Echo Server received %lu (%s) incoming bytes.\n", n, buf);
     printf("Echo Server is making those bytes upper case.\n");
     upper_case(buf);
